@@ -1,6 +1,12 @@
+import { FormEvent, useState } from 'react';
+
 import { useHistory } from 'react-router-dom';
 
+import toast, { Toaster } from 'react-hot-toast';
+
 import { useAuth } from '../hooks/useAuth';
+
+import { database } from '../services/firebase';
 
 import { Button } from '../components/Button';
 
@@ -8,11 +14,14 @@ import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
 import googleIconImg from '../assets/images/google-icon.svg';
 
-import '../styles/pages/Home.scss';
+import '../styles/pages/auth.scss';
 
 export function Home() {
-  const history = useHistory();
+  const [ roomKey, setRoomKey ] = useState('');
+
   const { user, signInWithGoogle } = useAuth();
+
+  const history = useHistory();
 
   async function handleCreateRoom() {
     if (!user)
@@ -21,8 +30,29 @@ export function Home() {
     history.push('/rooms/new');
   }
 
+  async function handleJoinRoom(event: FormEvent) {
+    event.preventDefault();
+
+    if(roomKey.trim() === '')
+      return;
+
+    const roomRef = await database.ref(`rooms/${roomKey}`).get();
+
+    if(!roomRef.exists()) {
+      toast.error('Room does not exists.');
+      return;
+    }
+
+    history.push(`/rooms/${roomKey}`)
+  }
+
   return (
     <div id="page-auth" >
+       <Toaster
+        position="top-center"
+        reverseOrder={false}
+      />
+
       <aside>
         <img src={illustrationImg} alt="Ilustração simbolizando perguntas e respostas" />
         
@@ -42,10 +72,12 @@ export function Home() {
           
           <div className="separator" >ou entre em uma sala</div>
 
-          <form action="submit">
+          <form onSubmit={handleJoinRoom}>
             <input 
               type="text"
               placeholder="Digite o código da sala"
+              onChange={event => setRoomKey(event.target.value)}
+              value={roomKey}
             />
 
             <Button type="submit">
