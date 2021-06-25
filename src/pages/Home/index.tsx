@@ -60,7 +60,7 @@ export function Home() {
       </Helmet>
 
       <Toaster
-        position="top-center"
+        position="bottom-center"
         reverseOrder={false}
       />
 
