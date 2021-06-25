@@ -49,7 +49,7 @@ export function NewRoom() {
       </Helmet>
 
       <Toaster
-        position="top-center"
+        position="bottom-center"
         reverseOrder={false}
       />
 
