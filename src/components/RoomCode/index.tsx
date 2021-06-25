@@ -18,8 +18,8 @@ export function RoomCode(props: RoomCodeProps) {
   return (
     <>
       <Toaster
-          position="top-center"
-          reverseOrder={false}
+        position="bottom-center"
+        reverseOrder={false}
       />
 
       <button className="room-code" onClick={copyRoomCodeToClipboard}>
