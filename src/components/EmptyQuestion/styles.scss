@@ -1,0 +1,44 @@
+.empty-question {
+    width: 324px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 64px;
+
+    &.dark {
+      h2 {
+        color: #ffffff;
+      }
+
+      span {
+        color: #cccccc;
+      }
+
+      svg {
+        circle {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    h2 {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+
+      margin-top: 16px;
+    }
+
+    span {
+      font-family: Poppins, sans-serif;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: center;
+      color: #737380;
+
+      margin-top: 8px;
+    }
+}
