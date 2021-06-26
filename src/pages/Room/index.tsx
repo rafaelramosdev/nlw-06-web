@@ -84,7 +84,6 @@ export function Room() {
       }
     }
 
-
     const question = {
       content: newQuestion,
       author: {
