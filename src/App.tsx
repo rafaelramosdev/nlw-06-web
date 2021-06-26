@@ -9,11 +9,10 @@ import { Room } from './pages/Room';
 import { AdminRoom } from './pages/AdminRoom';
 
 function App() {
-
   return (
-   <BrowserRouter>
-      <AuthContextProvider >
-        <ThemeContextProvider >
+    <BrowserRouter>
+      <AuthContextProvider>
+        <ThemeContextProvider>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/rooms/new" component={NewRoom} />
@@ -23,7 +22,7 @@ function App() {
           </Switch>
         </ThemeContextProvider>
       </AuthContextProvider>
-   </BrowserRouter>
+    </BrowserRouter>
   );
 }
 
