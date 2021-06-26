@@ -2,6 +2,8 @@ import { ReactNode } from 'react';
 
 import cx from 'classnames';
 
+import { useTheme } from '../../hooks/useTheme';
+
 import './styles.scss';
 
 type QuestionProps = {
@@ -9,39 +11,40 @@ type QuestionProps = {
   author: {
     name: string;
     avatar: string;
-  }
+  };
   children?: ReactNode;
   isAnswered?: boolean;
   isHighlighted?: boolean;
-}
+};
 
 export function Question({
-  content, 
+  content,
   author,
   isAnswered = false,
   isHighlighted = false,
-  children
+  children,
 }: QuestionProps) {
+  const { theme } = useTheme();
+
   return (
-    <div 
+    <div
       className={cx(
-          'question',
-          { answered: isAnswered},
-          { highlighted: isHighlighted && !isAnswered }
-        )}
+        'question',
+        {dark: theme === 'dark'},
+        { answered: isAnswered },
+        { highlighted: isHighlighted && !isAnswered },
+      )}
     >
       <p>{content}</p>
 
       <footer>
-        <div className="user-info">
+        <div className={`user-info ${theme === 'dark' ? 'dark' : ''}`}>
           <img src={author.avatar} alt={author.name} />
 
           <span>{author.name}</span>
         </div>
 
-        <div>
-          {children}
-        </div>
+        <div className={`${theme === 'dark' ? 'dark' : ''}`}>{children}</div>
       </footer>
     </div>
   );

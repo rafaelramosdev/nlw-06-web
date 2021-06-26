@@ -11,7 +11,7 @@
   &.highlighted {
     background: #f4f0ff;
     border: 1px solid #835afd;
-    
+
     footer .user-info span {
       color: #29292e;
     }
@@ -19,6 +19,22 @@
 
   &.answered {
     background: #dbdcdd;
+  }
+
+  &.dark {
+    background: #38383b;
+
+    &.highlighted {
+      background: #2f234e;
+    }
+
+    &.answered {
+      background: #181818;
+    }
+
+    p {
+      color: #ffffff
+    }
   }
 
   p {
@@ -34,13 +50,19 @@
     .user-info {
       display: flex;
       align-items: center;
-      
+
+      &.dark {
+        span {
+          color: #f8f8f8;
+        }
+      }
+
       img {
         width: 32px;
         height: 32px;
         border-radius: 50%;
       }
-      
+
       span {
         margin-left: 8px;
         color: #737380;
@@ -51,6 +73,20 @@
     div + div {
       display: flex;
       gap: 16px;
+
+      &.dark {
+        button {
+          svg {
+            circle {
+              stroke: #ffffff;
+            }
+
+            path {
+              stroke: #ffffff;
+            }
+          }
+        }
+      }
     }
 
     button {
