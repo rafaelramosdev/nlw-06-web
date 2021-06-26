@@ -32,15 +32,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Letmeask é um website perfeito para você que busca ter um contato mais próximo com o seu público ou com outras pessoas, onde podem criar salas de Q&A de forma organizada, prática e agradável.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
-
-## ⚙️ Funcionalidades
-
 O Letmeask foi desenvolvido pensando em oferecer o funcional de forma organizada, prática e agradável.
 
 Ele possui uma interface clean, moderna e coerente com o conceito de realtime que contribui principalmente na funcionalidade de enviar perguntas/respostas e realizar interações nelas, onde tudo ocorre em tempo real para todos que estiverem na sala.
 
-Como a intenção é oferecer algo organizado, prático e agradável para todos, o Letmeask conta com um sistema de administração das salas de Q&A, onde o criador dela, automaticamente ganha superpoderes ao acessá-la 😉.
+Como a intenção é oferecer algo organizado, prático e agradável para todos, o Letmeask conta com um sistema de administração das salas de Q&A, onde o criador dela, automaticamente ganha superpoderes ao acessá-la. 😉
 
 Você consegue e pode fazer se desejar, interações nas perguntas/respostas, como:
 
@@ -49,15 +45,15 @@ Você consegue e pode fazer se desejar, interações nas perguntas/respostas, co
 - Marcar como respondido
 - Excluir
 
-**Lembrando que essas três últimas interações só será possível se você for o admin da sala 🕵️‍♀️.**
+**Lembrando que essas três últimas interações só será possível se você for o admin da sala.** 🕵️‍♀️
 
-O admin, recebe também o superpoder de encerrar a sala quando desejar, mas tome cuidado, essa ação **não tem como voltar atrás** ⚠️.
+O admin, recebe também o superpoder de encerrar a sala quando desejar, mas tome cuidado, essa ação **não tem como voltar atrás**. ⚠️
 
 Está presente também, o famoso e querido Dark Mode 🌗, hoje em dia quase tudo possui uma versão escura e o Letmeask não poderia ficar sem.
 
 É uma versão simples, tem muitas outras coisas que podem ser implementadas e melhoradas, mas apesar de simples, é funcional, cumpre o que oferece.
 
-Fique à vontade e faça bom uso do Letmeask! 👋
+Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
 
 ## 🔖 Layout
 
@@ -98,10 +94,10 @@ O website estará disponível no seu navegador pelo endereço [`http://localhost
 
 ## 📄 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 
-Fique ligado nas próximas edições do [Next Level Week](https://nextlevelweek.com/), é um evento gratuito que não pode deixar passar, recomendo muito!
+Fique ligado nas próximas edições do [Next Level Week](https://nextlevelweek.com/), é um evento gratuito que você não pode deixar passar, recomendo muito!
 
 Feito by [Rafael Ramos](https://rafaelramos.dev/) 🙋🏻‍♂️
