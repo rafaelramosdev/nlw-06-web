@@ -9,6 +9,14 @@
 
   display: flex;
 
+  &.dark {
+    background: #181818;
+
+    span {
+      color: #ffffff;
+    }
+  }
+
   div {
     height: 100%;
     background: #835afd;

@@ -1,34 +1,49 @@
 import toast, { Toaster } from 'react-hot-toast';
 
+import { useTheme } from '../../hooks/useTheme';
+
 import copyImg from '../../assets/images/copy.svg';
 
 import './styles.scss';
 
 type RoomCodeProps = {
   code: string;
-}
+};
 
-export function RoomCode(props: RoomCodeProps) {
+export function RoomCode({ code }: RoomCodeProps) {
+  const { theme } = useTheme();
+
   function copyRoomCodeToClipboard() {
-    navigator.clipboard.writeText(props.code);
+    navigator.clipboard.writeText(code);
 
-    toast.success('Successfully copied!');
+    if(theme === 'dark') {
+      toast.success('Successfully copied!', {
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+        },
+      });
+    } else {
+      toast.success('Successfully copied!');
+    }
   }
 
   return (
     <>
-      <Toaster
-        position="bottom-center"
-        reverseOrder={false}
-      />
+      <Toaster position="bottom-center" reverseOrder={false} />
 
-      <button className="room-code" onClick={copyRoomCodeToClipboard}>
+      <button
+        type="button"
+        className={`room-code ${theme === 'dark' ? 'dark' : ''}`}
+        onClick={copyRoomCodeToClipboard}
+      >
         <div>
           <img src={copyImg} alt="Copiar código da sala" />
         </div>
 
-        <span>Sala #{props.code}</span>
+        <span>Sala #{code}</span>
       </button>
     </>
-  )
+  );
 }
