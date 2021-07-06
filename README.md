@@ -16,10 +16,6 @@
 
 <br>
 
-## ✨ Demo
-
-Para visualizar o projeto finalizado, clique [aqui](https://nlw-06.web.app/).
-
 ## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
