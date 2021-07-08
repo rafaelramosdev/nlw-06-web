@@ -49,7 +49,7 @@ Está presente também, o famoso e querido Dark Mode 🌗, hoje em dia quase tud
 
 É uma versão simples, tem muitas outras coisas que podem ser implementadas e melhoradas, mas apesar de simples, é funcional, cumpre o que oferece.
 
-Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada dos dias 20 a 27 de Junho de 2021.
+Este é um projeto desenvolvido durante a **[Next Level Week Together](https://nextlevelweek.com/)**, apresentada nos dias 20 a 27 de Junho de 2021.
 
 ## 🔖 Layout
 
