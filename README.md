@@ -64,7 +64,7 @@ Você pode visualizar o layout do projeto através do link abaixo:
 Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
-$ git clone https://github.com/rafaelramosdev/nlw-06-web
+$ git clone https://github.com/rafaelramosdev/nlw-06-reactjs
 $ cd nlw-06-web
 ```
 
