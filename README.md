@@ -65,7 +65,7 @@ Clone o projeto e acesse a pasta do mesmo.
 
 ```bash
 $ git clone https://github.com/rafaelramosdev/nlw-06-reactjs
-$ cd nlw-06-web
+$ cd nlw-06-reactjs
 ```
 
 Para iniciá-lo, siga os passos abaixo:
